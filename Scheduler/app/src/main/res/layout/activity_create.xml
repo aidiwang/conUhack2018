@@ -6,4 +6,116 @@
     android:layout_height="match_parent"
     tools:context="simple.android.scheduler.Create">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Create Event"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Create"
+        android:textColor="@android:color/background_light"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="742dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="486dp"
+        android:layout_height="45dp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="171dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="660dp"
+        android:layout_height="220dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="404dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of the event:"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timeframe:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        tools:layout_editor_absoluteX="508dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="584dp"
+        tools:layout_editor_absoluteY="268dp" />
+
 </android.support.constraint.ConstraintLayout>
