@@ -6,4 +6,54 @@
     android:layout_height="match_parent"
     tools:context="simple.android.scheduler.Main">
 
+    <Button
+        android:id="@+id/create"
+        android:layout_width="217dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="21dp"
+        android:onClick="onClick"
+        android:text="Create Event"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="21dp"
+        android:onClick="onClick"
+        android:text="View Events"
+        app:layout_constraintBottom_toTopOf="@+id/invite"
+        app:layout_constraintEnd_toEndOf="@+id/invite"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/invite"
+        app:layout_constraintTop_toBottomOf="@+id/create" />
+
+    <Button
+        android:id="@+id/invite"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="76dp"
+        android:onClick="onClick"
+        android:text="Invitations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="80dp"
+        android:text="Scheduler"
+        app:layout_constraintBottom_toTopOf="@+id/create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
