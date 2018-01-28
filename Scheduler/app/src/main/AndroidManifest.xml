@@ -26,8 +26,8 @@
         <activity android:name=".Main" />
         <activity android:name=".Create" />
         <activity
-            android:name=".Settings"
-            android:label="@string/title_activity_settings" />
+            android:name=".Settings"/>
+            <!--android:label="@string/title_activity_settings"-->
         <activity android:name=".ViewEvents" />
         <activity android:name=".Invitations" />
         <activity android:name=".InviteContacts" />
