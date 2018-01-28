@@ -25,7 +25,7 @@ public class Main extends AppCompatActivity {
 
     public void onClick(View v) {
         Button create = (Button) v;
-        Intent i = new Intent(Main.this, InviteContacts.class);
+        Intent i = new Intent(Main.this, Create.class);
         startActivity(i);
     }
 
