@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context="simple.android.scheduler.InviteContacts">
 
+    <Button
+        android:id="@+id/loadContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="List Contacts"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="26dp" />
 </android.support.constraint.ConstraintLayout>
