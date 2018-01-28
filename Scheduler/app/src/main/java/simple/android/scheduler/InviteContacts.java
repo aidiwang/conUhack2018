@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 //import com.google.gdata.client.*;
 //import com.google.gdata.client.contacts.*;
@@ -27,8 +28,13 @@ public class InviteContacts extends AppCompatActivity {
 //    // Authorize the service object.
 //// ...
 
-    private Button loadContacts;
+    Button loadContacts;
+    //EditText editTextEvent = (EditText)findViewById(R.id.editTextEvent);
+    //String inputText = editTextEvent.getText().toString();
     Button inviteButton;
+    //EditText editTextEvent = (EditText)findViewById(R.id.editTextEvent);
+
+    //String name  =  editTextEvent.getText().toString();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +45,7 @@ public class InviteContacts extends AppCompatActivity {
         loadContacts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadContacts();
+                //loadContacts();
 //                View.OnClickListener);
             }
         });
@@ -53,15 +59,15 @@ public class InviteContacts extends AppCompatActivity {
         startActivity(i);
     }
 
-    private void loadContacts(){
-        StringBuilder builder =  new StringBuilder();
-        ContentResolver contentResolver = getContentResolver();
-        Cursor cursor = contentResolver.query(ContactsContract.Contacts.CONTENT_URI, null, null
-        , null, null);
-
-        if (cursor.getCount()>0) {
-            String id = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts._ID));
-            String name = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
-        };
-    }
+//    private void loadContacts(){
+//        StringBuilder builder =  new StringBuilder();
+//        ContentResolver contentResolver = getContentResolver();
+//        Cursor cursor = contentResolver.query(ContactsContract.Contacts.CONTENT_URI, null, null
+//        , null, null);
+//
+//        if (cursor.getCount()>0) {
+//            String id = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts._ID));
+//            String name = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+//        };
+//    }
 }
