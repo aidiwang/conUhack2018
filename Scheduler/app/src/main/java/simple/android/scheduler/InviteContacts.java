@@ -1,6 +1,7 @@
 package simple.android.scheduler;
 
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.database.Cursor;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
@@ -27,6 +28,7 @@ public class InviteContacts extends AppCompatActivity {
 //// ...
 
     private Button loadContacts;
+    Button inviteButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,12 @@ public class InviteContacts extends AppCompatActivity {
         });
 
 
+    }
+
+    public void onClickInvite(View v) {
+        Button inviteButton = (Button) v;
+        Intent i = new Intent(InviteContacts.this, CurrentEvent.class);
+        startActivity(i);
     }
 
     private void loadContacts(){

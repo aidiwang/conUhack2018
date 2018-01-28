@@ -22,5 +22,11 @@ public class Create extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void onClickCreate(View v) {
+        Button createButton = (Button) v;
+        Intent i = new Intent(Create.this, InviteContacts.class);
+        startActivity(i);
+    }
+
 
 }
