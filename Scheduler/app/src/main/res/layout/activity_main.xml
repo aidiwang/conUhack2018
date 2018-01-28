@@ -9,43 +9,44 @@
     <Button
         android:id="@+id/create"
         android:layout_width="259dp"
-        android:layout_height="75dp"
+        android:layout_height="72dp"
         android:layout_marginBottom="21dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginStart="62dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
         android:text="Create Event"
         app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintVertical_bias="0.83" />
 
     <Button
         android:id="@+id/view"
         android:layout_width="259dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="19dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginStart="62dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="60dp"
+        android:onClick="onClick2"
         android:text="View Events"
         app:layout_constraintBottom_toTopOf="@+id/invite"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/create" />
+        app:layout_constraintEnd_toEndOf="@+id/invite" />
 
     <Button
         android:id="@+id/invite"
         android:layout_width="259dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="80dp"
         android:layout_marginEnd="62dp"
         android:layout_marginStart="62dp"
+        android:onClick="onClick3"
         android:text="Invitations"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
+    <!-- <EditText
         android:id="@+id/editText"
         android:layout_width="145dp"
         android:layout_height="0dp"
@@ -55,6 +56,20 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:singleLine="true"
+        android:text="Scheduler"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /> -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="151dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="80dp"
         android:text="Scheduler"
         android:textSize="30sp"
         android:textStyle="bold"

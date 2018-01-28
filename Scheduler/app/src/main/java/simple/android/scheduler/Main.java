@@ -24,12 +24,17 @@ public class Main extends AppCompatActivity {
         Button create = (Button) v;
         Intent i = new Intent(Main.this, Create.class);
         startActivity(i);
+    }
 
-        Button view = (Button) v;
+    public void onClick2(View w) {
+        Button view = (Button) w;
         Intent j = new Intent(Main.this, ViewEvents.class);
         startActivity(j);
 
-        Button invite = (Button) v;
+    }
+
+    public void onClick3(View x) {
+        Button invite = (Button) x;
         Intent k = new Intent(Main.this, Invitations.class);
         startActivity(k);
     }
