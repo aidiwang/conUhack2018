@@ -25,7 +25,7 @@ public class Title extends AppCompatActivity {
 
     public void onClick(View v) {
         Button button = (Button) v;
-        Intent i = new Intent(Title.this, Login.class);
+        Intent i = new Intent(Title.this, Main.class);
         startActivity(i);
     }
 }
